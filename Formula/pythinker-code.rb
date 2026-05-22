@@ -5,8 +5,8 @@ class PythinkerCode < Formula
 
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  url "https://files.pythonhosted.org/packages/1c/f0/e4e6b543b2d6994c43606ed9c3682bd92cee5900c18bf54e27fc6d90acf9/pythinker_code-0.12.0.tar.gz"
-  sha256 "c839a46fa5704426c3924b32f866efe5430e1d9bccb79f72147fc17a51834ef5"
+  url "https://files.pythonhosted.org/packages/32/d5/d1324c52f0a03eb91fb4436880271e0d0cda0c835b98e38b53d3b781aa3d/pythinker_code-0.13.0.tar.gz"
+  sha256 "e7e8646460ac5206ee756098807169fb2d867311712e1657ff27528d2835e8a8"
   license "Apache-2.0"
 
   depends_on "python@3.13"
