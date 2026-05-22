@@ -8,6 +8,9 @@ class PythinkerAi < Formula
   license "MIT"
 
   depends_on "python@3.12"
+  depends_on "openssl@3"
+  depends_on "pkg-config" => :build
+  depends_on "rust" => :build
 
   conflicts_with "pythinker-code",
     because: "both install a `pythinker` executable into bin/"
