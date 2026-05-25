@@ -1,14 +1,11 @@
 class PythinkerAi < Formula
   desc "Tiny async agent framework with chat channels, memory, MCP, and an OpenAI-compatible API"
   homepage "https://github.com/mohamed-elkholy95/Pythinker-ai"
-  url "https://files.pythonhosted.org/packages/75/a3/3bef631278b6c30a300482fddc235cadfcf7d415a77b39c9b99b189f524d/pythinker_ai-2.7.0.tar.gz"
-  sha256 "e802352d350e2e5b1c5b8256b31f065d1af1696633df4f2acba123867d25ad57"
+  url "https://files.pythonhosted.org/packages/66/b3/eed6a6c2f5bc955d203e4febcf20572f048d51170a40061c8cfac91acfd5/pythinker_ai-2.7.1.tar.gz"
+  sha256 "123d282778c60870133ace40926b39c9222d44698273edb659fdab58fb98908a"
   license "MIT"
 
   depends_on "python@3.12"
-
-  conflicts_with "pythinker-code",
-    because: "both install a `pythinker` executable into bin/"
 
   def install
     # Provision a plain venv and let pip resolve prebuilt wheels for
@@ -36,10 +33,10 @@ class PythinkerAi < Formula
       "--no-binary=dulwich", "--no-deps", "--no-warn-script-location",
       "dulwich"
 
-    bin.install_symlink libexec/"bin/pythinker"
+    bin.install_symlink libexec/"bin/pythinker-ai"
   end
 
   test do
-    system bin/"pythinker", "--version"
+    system bin/"pythinker-ai", "--version"
   end
 end
