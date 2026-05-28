@@ -3,30 +3,30 @@
 class PythinkerCode < Formula
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  version "0.19.0"
+  version "0.20.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.19.0/pythinker-0.19.0-aarch64-apple-darwin.tar.gz"
-      sha256 "e2b29e1cc43733a92906d532c79e846f019893d77c4c55330987fe0d3859991b"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-aarch64-apple-darwin.tar.gz"
+      sha256 "bc48b91123c59ccf48a552a81123fd2e011cfa2094a895d5e9e852c99f03d7bb"
     end
 
     on_intel do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.19.0/pythinker-0.19.0-x86_64-apple-darwin.tar.gz"
-      sha256 "4eff15045b4d1beb2d216b558240d66fbc6b16c421b26286362da80ccdbf3f8b"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-x86_64-apple-darwin.tar.gz"
+      sha256 "8e77b842154db1dddc2b06f91b0db2b02a9bc8a8dd862b8a0d086188ebaf255d"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.19.0/pythinker-0.19.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "2b008406e729308c942ae5a974e48ab0e51c7732758aa3c170de2125803c4405"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "8b50a27f5f932c9f3b3a9089a47c361cb53b6e99b7d910dd8265fbff5b014e5b"
     end
 
     on_intel do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.19.0/pythinker-0.19.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "47333812e0465ad9a87d7f796a3f137b9dc7b974cb015d7a0342cf26b3526eeb"
+      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.20.0/pythinker-0.20.0-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "706fd5752a7928f85f96e27325c70fa46a4c302e655f32d324c0be45c15aab0e"
     end
   end
 
