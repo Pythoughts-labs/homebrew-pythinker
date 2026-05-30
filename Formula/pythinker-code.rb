@@ -3,37 +3,59 @@
 class PythinkerCode < Formula
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  version "0.23.0"
+  version "0.25.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.23.0/pythinker-0.23.0-aarch64-apple-darwin.tar.gz"
-      sha256 "fa9b2ca10f42918c9c20fb96f4a04ea42ebd056d5f9916eaba415fc6c560a4b0"
+      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.25.0/pythinker-0.25.0-aarch64-apple-darwin-onedir.tar.gz"
+      sha256 "3aab3f0a258ffb2137dcecbdac094d1d5850f7baa1444ddc6cf449b95889f2e7"
     end
 
     on_intel do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.23.0/pythinker-0.23.0-x86_64-apple-darwin.tar.gz"
-      sha256 "8fbb226348d86162a89e776737b1f0e6def995717d53bfbeb75633fbe84c0c7f"
+      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.25.0/pythinker-0.25.0-x86_64-apple-darwin-onedir.tar.gz"
+      sha256 "8ccea721f26401143927e4890518d101b6b251bb83ac07f0dfb14a2c30809b63"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.23.0/pythinker-0.23.0-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "6fd70696a932f2567e1726feb33f20d45eb9aad287eadc6bd6fcc42d3b03a921"
+      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.25.0/pythinker-0.25.0-aarch64-unknown-linux-gnu-onedir.tar.gz"
+      sha256 "7990e319367bf7d066da98988d3188c7e4a12a040b6667481932bd546b0aa56f"
     end
 
     on_intel do
-      url "https://github.com/mohamed-elkholy95/Pythinker-Code/releases/download/v0.23.0/pythinker-0.23.0-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "58a45731e0bf5e47b79414ebfeb8668e05c2cf2a9a63dfd094c77b5e92bba7a2"
+      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.25.0/pythinker-0.25.0-x86_64-unknown-linux-gnu-onedir.tar.gz"
+      sha256 "e6c8a5baa265f3c43cb698a2bad250a6880de207837db8fab6f0ca0e0662658a"
     end
   end
 
   def install
-    libexec.install "pythinker"
+    # Onedir PyInstaller build: a "pythinker" launcher next to an "_internal"
+    # directory. Homebrew chdirs into the tarball's single "pythinker/" root,
+    # so Dir["*"] is the launcher plus _internal. Install the whole tree into
+    # libexec and put an exec wrapper on PATH so the launcher resolves
+    # _internal next to its real location.
+    libexec.install Dir["*"]
     (libexec/".pythinker-native").write "pythinker-native-build\n"
     bin.write_exec_script libexec/"pythinker"
+  end
+
+  def caveats
+    # Static settled frame of the curl/PowerShell installers' "Tetris" logo
+    # (install.sh / install.ps1). Homebrew renders caveats as plain text, so
+    # this is the uncoloured robot-head. The squiggly heredoc strips the common
+    # leading indent, so the art sits one column left of the curl banner.
+    <<~EOS
+
+            ●
+            │
+        ▛▀▀▀▀▀▀▀▜
+       ◖█ ◉   ◉ █◗
+        ▙▄▄▄≡▄▄▄▟
+
+        pythinker code · your next CLI agent
+    EOS
   end
 
   test do
