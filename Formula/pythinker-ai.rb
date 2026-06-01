@@ -1,6 +1,6 @@
 class PythinkerAi < Formula
   desc "Tiny async agent framework with chat channels, memory, MCP, and an OpenAI-compatible API"
-  homepage "https://github.com/mohamed-elkholy95/Pythinker-ai"
+  homepage "https://github.com/Pythoughts-labs/pythinker-home"
   url "https://files.pythonhosted.org/packages/66/b3/eed6a6c2f5bc955d203e4febcf20572f048d51170a40061c8cfac91acfd5/pythinker_ai-2.7.1.tar.gz"
   sha256 "123d282778c60870133ace40926b39c9222d44698273edb659fdab58fb98908a"
   license "MIT"

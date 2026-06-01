@@ -8,24 +8,24 @@ class PythinkerCode < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-aarch64-apple-darwin-onedir.tar.gz"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-aarch64-apple-darwin-onedir.tar.gz"
       sha256 "6ea035b33215ec8f51a3ea096110909f6b3b97a9902ff8d0bb1ce6215a2e2c2e"
     end
 
     on_intel do
-      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-x86_64-apple-darwin-onedir.tar.gz"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-x86_64-apple-darwin-onedir.tar.gz"
       sha256 "d5e9af1d32516231f581e0b1124f742b5baafce24c65d825381e0be24f34dd4c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-aarch64-unknown-linux-gnu-onedir.tar.gz"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-aarch64-unknown-linux-gnu-onedir.tar.gz"
       sha256 "846e4be54065de2c095a310ab28cf5fe92d38a1e9d86b8c787ad96bbf6eae15f"
     end
 
     on_intel do
-      url "https://github.com/TechMatrix-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-x86_64-unknown-linux-gnu-onedir.tar.gz"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.27.0/pythinker-0.27.0-x86_64-unknown-linux-gnu-onedir.tar.gz"
       sha256 "8f07ad10f4f594dfcb57a34094b4e9a1ce2b74bd8c447f095c800d31f301c6cb"
     end
   end
