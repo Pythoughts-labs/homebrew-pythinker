@@ -3,30 +3,30 @@
 class PythinkerCode < Formula
   desc "Terminal-native review-first AI engineering agent"
   homepage "https://pythinker.com"
-  version "0.59.0"
+  version "0.60.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.59.0/pythinker-0.59.0-aarch64-apple-darwin-onedir.tar.gz"
-      sha256 "4e3d904c98afbdfce826ded8850f5db67c69ea712154eaf558ffc175b6f3494e"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.60.0/pythinker-0.60.0-aarch64-apple-darwin-onedir.tar.gz"
+      sha256 "9e71e29fea012ef1282397a177e04ef15710fd41d8809d6f2195a7e7c60cf84b"
     end
 
     on_intel do
-      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.59.0/pythinker-0.59.0-x86_64-apple-darwin-onedir.tar.gz"
-      sha256 "0a92ce7eb316ee0cf4edeec226bfc47e41f5dccae46b3799da33bae2e9e8f451"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.60.0/pythinker-0.60.0-x86_64-apple-darwin-onedir.tar.gz"
+      sha256 "f7a315e16bca18a6c3d7b1d91d25d16997568b0c82e339846b4cab5ab11bd244"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.59.0/pythinker-0.59.0-aarch64-unknown-linux-gnu-onedir.tar.gz"
-      sha256 "97760349d29eddd24e35cf8ad3e45620aa85a75e64f1afaf3b4da4b58cba8f7b"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.60.0/pythinker-0.60.0-aarch64-unknown-linux-gnu-onedir.tar.gz"
+      sha256 "6913f0119bce6af13252d06e9ce11b70d62c08c297e5c3b34a8364f99ad1c3bf"
     end
 
     on_intel do
-      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.59.0/pythinker-0.59.0-x86_64-unknown-linux-gnu-onedir.tar.gz"
-      sha256 "017431d62b604e554adf8dd119d75d13c920057fb6344bfc531f54016a3a7be8"
+      url "https://github.com/Pythoughts-labs/pythinker-code/releases/download/v0.60.0/pythinker-0.60.0-x86_64-unknown-linux-gnu-onedir.tar.gz"
+      sha256 "174e3a1979da1b28de20b5bf9c17eb15b16c3e68af9285b331629116cd974389"
     end
   end
 
